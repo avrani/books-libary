@@ -1,0 +1,87 @@
+
+@mixin xsm(){
+    @media screen and (min-width:100px)  and (max-width:480px)  {   @content;   }
+}
+
+@mixin sm(){
+    @media screen and (min-width:480px)  and (max-width:645px)  {   @content;    }
+}
+
+@mixin mm(){
+    @media screen and (min-width:640px)  and (max-width:960px)  {   @content;   }
+}
+
+@mixin lm(){
+    @media screen and (min-width:960px)  and (max-width:1024px) {   @content;    }
+}
+
+@mixin xlm(){
+    @media screen and (min-width:1024px) and (max-width:1280px) {   @content;    }
+}
+
+@mixin sd(){
+    @media screen and (min-width:1280px) and (max-width:1449px) {   @content;    }
+}
+
+@mixin md(){
+    @media screen and (min-width:1280px) and (max-width:1680px) {   @content;    }
+}
+
+@mixin ld(){
+    @media screen and (min-width:1680px) and (max-width:1900px) {   @content;    }
+}
+
+@mixin xld(){
+    @media screen and (min-width:1900px) {   @content;    }
+}
+.container{
+  position: relative;
+  top: 50px;
+}
+.groupBtns{
+  float: right;
+  position: relative;
+  top: -30px;
+}
+.error{
+  color: red;
+}
+
+.thumbnail img{
+  width:150px;
+  height:200px;
+}
+.addBtn{
+  margin: 0 auto;
+  display: inherit;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+.btn{
+  @include xsm{
+    font-size: 20px;
+  }
+}
+.btn-sm, .btn-group-sm > .btn {
+  @include xsm{
+    padding: 3px 8px;
+    top: -24px;
+    margin: 2px;
+  }
+}
+.thumbnail img {
+  @include xsm{
+    width: 200px;
+    height: auto;
+    left: 50%;
+    position: relative;
+    margin-left: -100px;
+  }
+}
+.thumbnail .caption {
+  @include xsm{
+    padding: 9px;
+    color: #333;
+    font-size: 20px;
+  }
+}

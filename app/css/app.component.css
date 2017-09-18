@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  top: 50px; }
+
+.groupBtns {
+  float: right;
+  position: relative;
+  top: -30px; }
+
+.error {
+  color: red; }
+
+.thumbnail img {
+  width: 150px;
+  height: 200px; }
+
+.addBtn {
+  margin: 0 auto;
+  display: inherit;
+  margin-top: -40px;
+  margin-bottom: 10px; }
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .btn {
+    font-size: 20px; } }
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .btn-sm, .btn-group-sm > .btn {
+    padding: 3px 8px;
+    top: -24px;
+    margin: 2px; } }
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .thumbnail img {
+    width: 200px;
+    height: auto;
+    left: 50%;
+    position: relative;
+    margin-left: -100px; } }
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  .thumbnail .caption {
+    padding: 9px;
+    color: #333;
+    font-size: 20px; } }
+
+/*# sourceMappingURL=app.component.css.map */
